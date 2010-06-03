@@ -14,24 +14,15 @@
  * limitations under the License.
  */
 
+package griffon.lookandfeel.squareness
+
+import griffon.lookandfeel.AbstractLookAndFeelTestCase
+
 /**
  * @author Andres Almiray
  */
-class LookandfeelSquarenessGriffonPlugin {
-    def version = 0.1
-    def griffonVersion = '0.3.2 > *'
-    def dependsOn = [lookandfeel: 0.1]
-    def toolkits = ['swing']
-    def license = 'Apache Software License 2.0'
-
-    def author = 'Andres Almiray'
-    def authorEmail = 'aalmiray@users.sourceforge.net'
-    def title = 'Squareness Swing Look & Feel'
-    def description = '''
-Squareness Swing Look & Feel.
-http://squareness.beeger.net/
-'''
-
-    // URL to the plugin's documentation
-    def documentation = 'http://griffon.codehaus.org/Lookandfeel+Squareness+Plugin'
+class SquarenessLookAndFeelTests extends AbstractLookAndFeelTestCase {
+    void testSquarenessSquarenessLookAndFeel() {
+        setAndTestLookAndFeel('Squareness', 'Squareness')
+    }
 }
